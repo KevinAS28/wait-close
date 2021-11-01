@@ -4,6 +4,9 @@ def kill():
     os.system('killall zoom')
 wait_time = 60*60 + 15*60
 
-time.sleep(wait_time)
+for i in range(int(wait_time)):
+    print(i, wait_time)
+    time.sleep(1)
+    
 kill()
 print('Killed at: ', time.ctime())
